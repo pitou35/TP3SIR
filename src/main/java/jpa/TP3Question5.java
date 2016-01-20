@@ -18,27 +18,24 @@ import domain.Person;
 @WebServlet(name="addHouse",urlPatterns={"/addHouse"})
 public class TP3Question5 extends HttpServlet{
 
-	public static void main(String[] args) {
-		
-		
-	}
+	
 	
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response)
 		throws ServletException, IOException {
-		
+		System.out.println("entrée");
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter();
 		
-			EntityManagerFactory factory = Persistence
+			EntityManagerFactory factory2 = Persistence
 					.createEntityManagerFactory("mysql");
-			EntityManager manager = factory.createEntityManager();
+			EntityManager manager = factory2.createEntityManager();
 			EntityTransaction tx = manager.getTransaction();
 			tx.begin();
 			
 			try {
-				Person p1=new Person(request.getParameter("nom"), request.getParameter("prenom"), request.getParameter("mail"));
+				Person p1=new Person(request.getParameter("nom"), request.getParameter("prenom"), request.getParameter("email"));
 				manager.persist(p1);
 				
 			} catch (Exception e) {
@@ -46,7 +43,7 @@ public class TP3Question5 extends HttpServlet{
 			}
 			tx.commit();
 			manager.close();
-			factory.close();
+			factory2.close();
 			
 			
 			
