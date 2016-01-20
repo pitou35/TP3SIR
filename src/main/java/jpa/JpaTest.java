@@ -19,7 +19,6 @@ public class JpaTest {
 		EntityManagerFactory factory = Persistence
 				.createEntityManagerFactory("mysql");
 		EntityManager manager = factory.createEntityManager();
-//coucou oui c'est moi
 		EntityTransaction tx = manager.getTransaction();
 		tx.begin();
 		try {
