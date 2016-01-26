@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import domain.Person;
 
-@WebServlet(name="addHouse",urlPatterns={"/addHouse"})
+@WebServlet(name="addHouse",urlPatterns={"/addPerson"})
 public class TP3Question5 extends HttpServlet{
 
 	
@@ -23,7 +23,7 @@ public class TP3Question5 extends HttpServlet{
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response)
 		throws ServletException, IOException {
-		System.out.println("entrée");
+		System.out.println("entrï¿½e");
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter();
@@ -50,11 +50,11 @@ public class TP3Question5 extends HttpServlet{
 			out.println("<HTML>\n<BODY>\n" +
 					"<H1>Recapitulatif des informations</H1>\n" +
 					"<UL>\n" +			
-			" <LI>Nom: "
+			" <LI>Email: "
 					+ request.getParameter("email") + "\n" +
-					" <LI>Prenom: "
+					" <LI>Nom: "
 					+ request.getParameter("nom") + "\n" +
-					" <LI>Age: "
+					" <LI>Prenom: "
 					+ request.getParameter("prenom") + "\n" +
 					"</UL>\n" +				
 			"</BODY></HTML>");
