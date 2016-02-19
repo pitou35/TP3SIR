@@ -24,9 +24,6 @@ public class Person {
 	
 	private List<Home> maisons=new ArrayList<Home>();
 	
-	
-	
-	
 	public Person(String nom, String prenom, String email){
 		this.nom=nom;
 		this.prenom=prenom;
