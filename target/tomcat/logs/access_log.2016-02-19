@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:27:09 +0100] "GET /myform.html HTTP/1.1" 200 274 http-bio-8080-exec-1 27
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:27:10 +0100] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:27:20 +0100] "GET /FormulaireQuestion5.html HTTP/1.1" 200 494 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:27:31 +0100] "POST /addPerson HTTP/1.1" 200 137 http-bio-8080-exec-7 5786
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:43:00 +0100] "POST /addPerson HTTP/1.1" 200 163 http-bio-8080-exec-1 1192
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:44:23 +0100] "GET /FormulaireQuestion5.html HTTP/1.1" 200 502 http-bio-8080-exec-6 3

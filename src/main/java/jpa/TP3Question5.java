@@ -18,8 +18,6 @@ import domain.Person;
 @WebServlet(name="addHouse",urlPatterns={"/addPerson"})
 public class TP3Question5 extends HttpServlet{
 
-	
-	
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response)
 		throws ServletException, IOException {
@@ -44,9 +42,6 @@ public class TP3Question5 extends HttpServlet{
 			tx.commit();
 			manager.close();
 			factory2.close();
-			
-			
-			
 			out.println("<HTML>\n<BODY>\n" +
 					"<H1>Recapitulatif des informations</H1>\n" +
 					"<UL>\n" +			
