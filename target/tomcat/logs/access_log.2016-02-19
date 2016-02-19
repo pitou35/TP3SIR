@@ -4,3 +4,6 @@
 0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:27:31 +0100] "POST /addPerson HTTP/1.1" 200 137 http-bio-8080-exec-7 5786
 0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:43:00 +0100] "POST /addPerson HTTP/1.1" 200 163 http-bio-8080-exec-1 1192
 0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:44:23 +0100] "GET /FormulaireQuestion5.html HTTP/1.1" 200 502 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:50:43 +0100] "GET /rest/hello/home HTTP/1.1" 200 141 http-bio-8080-exec-8 168
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:50:54 +0100] "GET /rest/hello/home HTTP/1.1" 200 141 http-bio-8080-exec-9 2
+0:0:0:0:0:0:0:1 - - [19/Feb/2016:21:55:54 +0100] "GET /rest/hello/home HTTP/1.1" 200 141 http-bio-8080-exec-1 2
